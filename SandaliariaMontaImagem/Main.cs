@@ -72,6 +72,11 @@ namespace SandaliariaMontaImagem
                     {
                         if(pbImagem2.ImageLocation != null)
                         {
+                            btCarregar1.Enabled = false;
+                            btCarregar2.Enabled = false;
+                            btLimparLista.Enabled = false;
+                            btProcessar.Enabled = false;
+                            btPastaSaida.Enabled = false;
                             foreach (var item in ListaImagens)
                             {
                                 Image loadedImage = Image.FromFile(item.ToString());
@@ -131,6 +136,12 @@ namespace SandaliariaMontaImagem
                                 }
                                 contadorDeImagem++;
                             }
+                            btCarregar1.Enabled = true;
+                            btCarregar2.Enabled = true;
+                            btLimparLista.Enabled = true;
+                            btProcessar.Enabled = true;
+                            btPastaSaida.Enabled = true;
+
                         }
                         else
                             MessageBox.Show("Adicione uma logo marca");
@@ -148,7 +159,7 @@ namespace SandaliariaMontaImagem
             }
         }
 
-        private void brPastaSaida_Click(object sender, EventArgs e)
+        private void btPastaSaida_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog pasta = new FolderBrowserDialog();
             if (pasta.ShowDialog() == DialogResult.OK)

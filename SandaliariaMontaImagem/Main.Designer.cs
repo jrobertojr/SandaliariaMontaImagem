@@ -33,12 +33,12 @@
             this.panelLogoDandaliaria = new System.Windows.Forms.Panel();
             this.btLimparLista = new System.Windows.Forms.Button();
             this.lbPastaSaida = new System.Windows.Forms.Label();
-            this.brPastaSaida = new System.Windows.Forms.Button();
+            this.btPastaSaida = new System.Windows.Forms.Button();
             this.txPastaSaida = new System.Windows.Forms.TextBox();
             this.btProcessar = new System.Windows.Forms.Button();
             this.btCarregar2 = new System.Windows.Forms.Button();
             this.btCarregar1 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbLogoMarca = new System.Windows.Forms.GroupBox();
             this.pbImagem2 = new System.Windows.Forms.PictureBox();
             this.lstbImagens = new System.Windows.Forms.ListBox();
             this.gbListaImagens = new System.Windows.Forms.GroupBox();
@@ -47,7 +47,7 @@
             this.btFechar = new System.Windows.Forms.Button();
             this.lbTituloJanela = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gbLogoMarca.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagem2)).BeginInit();
             this.gbListaImagens.SuspendLayout();
             this.panelBarraJanela.SuspendLayout();
@@ -58,7 +58,7 @@
             this.groupBox1.Controls.Add(this.panelLogoDandaliaria);
             this.groupBox1.Controls.Add(this.btLimparLista);
             this.groupBox1.Controls.Add(this.lbPastaSaida);
-            this.groupBox1.Controls.Add(this.brPastaSaida);
+            this.groupBox1.Controls.Add(this.btPastaSaida);
             this.groupBox1.Controls.Add(this.txPastaSaida);
             this.groupBox1.Controls.Add(this.btProcessar);
             this.groupBox1.Controls.Add(this.btCarregar2);
@@ -104,20 +104,20 @@
             this.lbPastaSaida.TabIndex = 5;
             this.lbPastaSaida.Text = "Pasta de saída:";
             // 
-            // brPastaSaida
+            // btPastaSaida
             // 
-            this.brPastaSaida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.brPastaSaida.FlatAppearance.BorderSize = 0;
-            this.brPastaSaida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.brPastaSaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brPastaSaida.ForeColor = System.Drawing.Color.White;
-            this.brPastaSaida.Location = new System.Drawing.Point(606, 114);
-            this.brPastaSaida.Name = "brPastaSaida";
-            this.brPastaSaida.Size = new System.Drawing.Size(27, 20);
-            this.brPastaSaida.TabIndex = 0;
-            this.brPastaSaida.Text = "...";
-            this.brPastaSaida.UseVisualStyleBackColor = false;
-            this.brPastaSaida.Click += new System.EventHandler(this.brPastaSaida_Click);
+            this.btPastaSaida.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btPastaSaida.FlatAppearance.BorderSize = 0;
+            this.btPastaSaida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btPastaSaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPastaSaida.ForeColor = System.Drawing.Color.White;
+            this.btPastaSaida.Location = new System.Drawing.Point(606, 114);
+            this.btPastaSaida.Name = "btPastaSaida";
+            this.btPastaSaida.Size = new System.Drawing.Size(27, 20);
+            this.btPastaSaida.TabIndex = 0;
+            this.btPastaSaida.Text = "...";
+            this.btPastaSaida.UseVisualStyleBackColor = false;
+            this.btPastaSaida.Click += new System.EventHandler(this.btPastaSaida_Click);
             // 
             // txPastaSaida
             // 
@@ -172,22 +172,22 @@
             this.btCarregar1.UseVisualStyleBackColor = false;
             this.btCarregar1.Click += new System.EventHandler(this.btCarregar1_Click);
             // 
-            // groupBox3
+            // gbLogoMarca
             // 
-            this.groupBox3.Controls.Add(this.pbImagem2);
-            this.groupBox3.Location = new System.Drawing.Point(377, 25);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(423, 315);
-            this.groupBox3.TabIndex = 6;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "LOGO MARCA";
+            this.gbLogoMarca.Controls.Add(this.pbImagem2);
+            this.gbLogoMarca.Location = new System.Drawing.Point(370, 25);
+            this.gbLogoMarca.Name = "gbLogoMarca";
+            this.gbLogoMarca.Size = new System.Drawing.Size(430, 315);
+            this.gbLogoMarca.TabIndex = 6;
+            this.gbLogoMarca.TabStop = false;
+            this.gbLogoMarca.Text = "LOGO MARCA";
             // 
             // pbImagem2
             // 
             this.pbImagem2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbImagem2.Location = new System.Drawing.Point(3, 16);
             this.pbImagem2.Name = "pbImagem2";
-            this.pbImagem2.Size = new System.Drawing.Size(417, 296);
+            this.pbImagem2.Size = new System.Drawing.Size(424, 296);
             this.pbImagem2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImagem2.TabIndex = 0;
             this.pbImagem2.TabStop = false;
@@ -272,7 +272,7 @@
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.panelBarraJanela);
             this.Controls.Add(this.gbListaImagens);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.gbLogoMarca);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
@@ -281,7 +281,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMenu_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
+            this.gbLogoMarca.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbImagem2)).EndInit();
             this.gbListaImagens.ResumeLayout(false);
             this.panelBarraJanela.ResumeLayout(false);
@@ -295,14 +295,14 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btCarregar2;
         private System.Windows.Forms.Button btCarregar1;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbLogoMarca;
         private System.Windows.Forms.PictureBox pbImagem2;
         private System.Windows.Forms.Button btProcessar;
         private System.Windows.Forms.ListBox lstbImagens;
         private System.Windows.Forms.GroupBox gbListaImagens;
         private System.Windows.Forms.TextBox txPastaSaida;
         private System.Windows.Forms.Label lbPastaSaida;
-        private System.Windows.Forms.Button brPastaSaida;
+        private System.Windows.Forms.Button btPastaSaida;
         private System.Windows.Forms.Button btLimparLista;
         private System.Windows.Forms.Panel panelLogoDandaliaria;
         private System.Windows.Forms.Panel panelBarraJanela;
