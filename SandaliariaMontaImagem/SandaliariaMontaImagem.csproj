@@ -64,7 +64,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\JuntaImagens.cs" />
     <Compile Include="Classes\RedimencionarImagem.cs" />
     <Compile Include="Log\RegistraLog.cs" />
     <Compile Include="Main.cs">
