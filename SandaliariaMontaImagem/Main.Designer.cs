@@ -78,7 +78,7 @@
             this.panelLogoDandaliaria.Location = new System.Drawing.Point(12, 70);
             this.panelLogoDandaliaria.Name = "panelLogoDandaliaria";
             this.panelLogoDandaliaria.Size = new System.Drawing.Size(247, 72);
-            this.panelLogoDandaliaria.TabIndex = 7;
+            this.panelLogoDandaliaria.TabIndex = 6;
             // 
             // btLimparLista
             // 
@@ -86,10 +86,11 @@
             this.btLimparLista.FlatAppearance.BorderSize = 0;
             this.btLimparLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btLimparLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLimparLista.Location = new System.Drawing.Point(222, 19);
+            this.btLimparLista.ForeColor = System.Drawing.Color.White;
+            this.btLimparLista.Location = new System.Drawing.Point(189, 19);
             this.btLimparLista.Name = "btLimparLista";
             this.btLimparLista.Size = new System.Drawing.Size(149, 31);
-            this.btLimparLista.TabIndex = 6;
+            this.btLimparLista.TabIndex = 4;
             this.btLimparLista.Text = "LIMPAR LISTA";
             this.btLimparLista.UseVisualStyleBackColor = false;
             this.btLimparLista.Click += new System.EventHandler(this.btLimparLista_Click);
@@ -97,7 +98,7 @@
             // lbPastaSaida
             // 
             this.lbPastaSaida.AutoSize = true;
-            this.lbPastaSaida.Location = new System.Drawing.Point(278, 116);
+            this.lbPastaSaida.Location = new System.Drawing.Point(275, 117);
             this.lbPastaSaida.Name = "lbPastaSaida";
             this.lbPastaSaida.Size = new System.Drawing.Size(82, 13);
             this.lbPastaSaida.TabIndex = 5;
@@ -109,10 +110,11 @@
             this.brPastaSaida.FlatAppearance.BorderSize = 0;
             this.brPastaSaida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.brPastaSaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brPastaSaida.Location = new System.Drawing.Point(609, 113);
+            this.brPastaSaida.ForeColor = System.Drawing.Color.White;
+            this.brPastaSaida.Location = new System.Drawing.Point(606, 114);
             this.brPastaSaida.Name = "brPastaSaida";
-            this.brPastaSaida.Size = new System.Drawing.Size(24, 20);
-            this.brPastaSaida.TabIndex = 4;
+            this.brPastaSaida.Size = new System.Drawing.Size(27, 20);
+            this.brPastaSaida.TabIndex = 0;
             this.brPastaSaida.Text = "...";
             this.brPastaSaida.UseVisualStyleBackColor = false;
             this.brPastaSaida.Click += new System.EventHandler(this.brPastaSaida_Click);
@@ -120,10 +122,10 @@
             // txPastaSaida
             // 
             this.txPastaSaida.Enabled = false;
-            this.txPastaSaida.Location = new System.Drawing.Point(366, 114);
+            this.txPastaSaida.Location = new System.Drawing.Point(363, 114);
             this.txPastaSaida.Name = "txPastaSaida";
             this.txPastaSaida.Size = new System.Drawing.Size(237, 20);
-            this.txPastaSaida.TabIndex = 3;
+            this.txPastaSaida.TabIndex = 5;
             // 
             // btProcessar
             // 
@@ -131,10 +133,11 @@
             this.btProcessar.FlatAppearance.BorderSize = 0;
             this.btProcessar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btProcessar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btProcessar.ForeColor = System.Drawing.Color.White;
             this.btProcessar.Location = new System.Drawing.Point(639, 103);
             this.btProcessar.Name = "btProcessar";
             this.btProcessar.Size = new System.Drawing.Size(149, 39);
-            this.btProcessar.TabIndex = 2;
+            this.btProcessar.TabIndex = 3;
             this.btProcessar.Text = "PROCESSAR";
             this.btProcessar.UseVisualStyleBackColor = false;
             this.btProcessar.Click += new System.EventHandler(this.btProcessar_Click);
@@ -145,10 +148,11 @@
             this.btCarregar2.FlatAppearance.BorderSize = 0;
             this.btCarregar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCarregar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCarregar2.Location = new System.Drawing.Point(531, 19);
+            this.btCarregar2.ForeColor = System.Drawing.Color.White;
+            this.btCarregar2.Location = new System.Drawing.Point(380, 19);
             this.btCarregar2.Name = "btCarregar2";
-            this.btCarregar2.Size = new System.Drawing.Size(169, 31);
-            this.btCarregar2.TabIndex = 1;
+            this.btCarregar2.Size = new System.Drawing.Size(420, 31);
+            this.btCarregar2.TabIndex = 2;
             this.btCarregar2.Text = "CARREGAR LOGO MARCA";
             this.btCarregar2.UseVisualStyleBackColor = false;
             this.btCarregar2.Click += new System.EventHandler(this.btCarregar2_Click);
@@ -159,10 +163,11 @@
             this.btCarregar1.FlatAppearance.BorderSize = 0;
             this.btCarregar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCarregar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCarregar1.Location = new System.Drawing.Point(67, 19);
+            this.btCarregar1.ForeColor = System.Drawing.Color.White;
+            this.btCarregar1.Location = new System.Drawing.Point(34, 19);
             this.btCarregar1.Name = "btCarregar1";
             this.btCarregar1.Size = new System.Drawing.Size(149, 31);
-            this.btCarregar1.TabIndex = 0;
+            this.btCarregar1.TabIndex = 1;
             this.btCarregar1.Text = "CARREGAR IMAGENS";
             this.btCarregar1.UseVisualStyleBackColor = false;
             this.btCarregar1.Click += new System.EventHandler(this.btCarregar1_Click);
@@ -173,7 +178,7 @@
             this.groupBox3.Location = new System.Drawing.Point(377, 25);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(423, 315);
-            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "LOGO MARCA";
             // 
@@ -195,7 +200,7 @@
             this.lstbImagens.Location = new System.Drawing.Point(3, 16);
             this.lstbImagens.Name = "lstbImagens";
             this.lstbImagens.Size = new System.Drawing.Size(365, 296);
-            this.lstbImagens.TabIndex = 0;
+            this.lstbImagens.TabIndex = 6;
             // 
             // gbListaImagens
             // 
@@ -203,7 +208,7 @@
             this.gbListaImagens.Location = new System.Drawing.Point(0, 25);
             this.gbListaImagens.Name = "gbListaImagens";
             this.gbListaImagens.Size = new System.Drawing.Size(371, 315);
-            this.gbListaImagens.TabIndex = 3;
+            this.gbListaImagens.TabIndex = 6;
             this.gbListaImagens.TabStop = false;
             this.gbListaImagens.Text = "IMAGENS";
             // 
@@ -217,7 +222,7 @@
             this.panelBarraJanela.Location = new System.Drawing.Point(0, 0);
             this.panelBarraJanela.Name = "panelBarraJanela";
             this.panelBarraJanela.Size = new System.Drawing.Size(800, 25);
-            this.panelBarraJanela.TabIndex = 4;
+            this.panelBarraJanela.TabIndex = 6;
             this.panelBarraJanela.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBarraJanela_MouseMove);
             // 
             // btMinimizar
@@ -230,7 +235,7 @@
             this.btMinimizar.Location = new System.Drawing.Point(748, 0);
             this.btMinimizar.Name = "btMinimizar";
             this.btMinimizar.Size = new System.Drawing.Size(23, 23);
-            this.btMinimizar.TabIndex = 2;
+            this.btMinimizar.TabIndex = 7;
             this.btMinimizar.UseVisualStyleBackColor = true;
             this.btMinimizar.Click += new System.EventHandler(this.btMinimizar_Click);
             // 
@@ -244,7 +249,7 @@
             this.btFechar.Location = new System.Drawing.Point(777, 0);
             this.btFechar.Name = "btFechar";
             this.btFechar.Size = new System.Drawing.Size(23, 23);
-            this.btFechar.TabIndex = 0;
+            this.btFechar.TabIndex = 7;
             this.btFechar.UseVisualStyleBackColor = true;
             this.btFechar.Click += new System.EventHandler(this.btFechar_Click);
             // 
@@ -256,7 +261,7 @@
             this.lbTituloJanela.Location = new System.Drawing.Point(12, 6);
             this.lbTituloJanela.Name = "lbTituloJanela";
             this.lbTituloJanela.Size = new System.Drawing.Size(174, 16);
-            this.lbTituloJanela.TabIndex = 0;
+            this.lbTituloJanela.TabIndex = 6;
             this.lbTituloJanela.Text = "Sandaliaria Logo Marca";
             // 
             // Main
@@ -271,6 +276,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logo Marca Sandaliaria";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMenu_FormClosing);
             this.groupBox1.ResumeLayout(false);

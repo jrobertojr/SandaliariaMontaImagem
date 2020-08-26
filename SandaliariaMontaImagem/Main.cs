@@ -65,67 +65,78 @@ namespace SandaliariaMontaImagem
             {
                 RedimencionarImagem redimencionarImagem = new RedimencionarImagem();
                 int contadorDeImagem = 0;
-                if (txPastaSaida.Text != null || txPastaSaida.Text != "")
+
+                if (txPastaSaida.Text != "")
                 {
-                    foreach (var item in ListaImagens)
+                    if (lstbImagens.Items.Count != 0)
                     {
-                        Image loadedImage = Image.FromFile(item.ToString());
-
-                        int logoLargura = pbImagem2.Image.Width;
-                        int logoAltura = pbImagem2.Image.Height;
-                        int novaLargura = 0;
-                        int novaAltura = 0;
-                        int bordaX = 0;
-                        int bordaY = 0;
-
-                        if (pbImagem2.Image.Width > pbImagem2.Image.Height)
+                        if(pbImagem2.ImageLocation != null)
                         {
-                            logoLargura = pbImagem2.Image.Width / 2;
-                            logoAltura = pbImagem2.Image.Height / 2;
-                            novaLargura = loadedImage.Width / 2;
-                            novaAltura = novaLargura * logoAltura / logoLargura;
-                            bordaX = novaAltura / 2;
-                            bordaY = novaAltura / 2;
-                        }
-                        else if (pbImagem2.Image.Width < pbImagem2.Image.Height)
-                        {
-                            logoLargura = pbImagem2.Image.Width / 2;
-                            logoAltura = pbImagem2.Image.Height / 2;
-                            novaLargura = loadedImage.Width / 2 * logoLargura / logoAltura;
-                            novaAltura = novaLargura * logoAltura / logoLargura;
-                            bordaX = novaLargura / 8;
-                            bordaY = novaLargura / 8;
-                        }
-                        else
-                        {
-                            logoLargura = pbImagem2.Image.Width / 2;
-                            logoAltura = pbImagem2.Image.Height / 2;
-                            novaLargura = loadedImage.Width / 2 * logoAltura / logoLargura;
-                            novaAltura = novaLargura * logoAltura / logoLargura;
-                            bordaX = novaLargura / 8;
-                            bordaY = logoAltura / 8;
-                        }
-
-                        if (novaLargura != 0 || novaAltura != 0)
-                        {
-                            using (Image image = loadedImage)
-                            using (Image watermarkImage = redimencionarImagem.ResizeImage(pbImagem2.Image, novaLargura, novaAltura))
-                            using (Graphics imageGraphics = Graphics.FromImage(image))
-                            using (TextureBrush watermarkBrush = new TextureBrush(watermarkImage))
+                            foreach (var item in ListaImagens)
                             {
-                                int x = (image.Width - bordaX - watermarkImage.Width);
-                                int y = (image.Height - bordaY - watermarkImage.Height);
-                                watermarkBrush.TranslateTransform(x, y);
-                                imageGraphics.FillRectangle(watermarkBrush, new Rectangle(new Point(x, y), new Size(watermarkImage.Width + 1, watermarkImage.Height)));
-                                image.Save($@"{txPastaSaida.Text}\Imagem{contadorDeImagem}.jpg");
+                                Image loadedImage = Image.FromFile(item.ToString());
+
+                                int logoLargura = pbImagem2.Image.Width;
+                                int logoAltura = pbImagem2.Image.Height;
+                                int novaLargura = 0;
+                                int novaAltura = 0;
+                                int bordaX = 0;
+                                int bordaY = 0;
+
+                                if (pbImagem2.Image.Width > pbImagem2.Image.Height)
+                                {
+                                    logoLargura = pbImagem2.Image.Width / 2;
+                                    logoAltura = pbImagem2.Image.Height / 2;
+                                    novaLargura = loadedImage.Width / 2;
+                                    novaAltura = novaLargura * logoAltura / logoLargura;
+                                    bordaX = novaAltura / 2;
+                                    bordaY = novaAltura / 2;
+                                }
+                                else if (pbImagem2.Image.Width < pbImagem2.Image.Height)
+                                {
+                                    logoLargura = pbImagem2.Image.Width / 2;
+                                    logoAltura = pbImagem2.Image.Height / 2;
+                                    novaLargura = loadedImage.Width / 2 * logoLargura / logoAltura;
+                                    novaAltura = novaLargura * logoAltura / logoLargura;
+                                    bordaX = novaLargura / 8;
+                                    bordaY = novaLargura / 8;
+                                }
+                                else
+                                {
+                                    logoLargura = pbImagem2.Image.Width / 2;
+                                    logoAltura = pbImagem2.Image.Height / 2;
+                                    novaLargura = loadedImage.Width / 2 * logoAltura / logoLargura;
+                                    novaAltura = novaLargura * logoAltura / logoLargura;
+                                    bordaX = novaLargura / 8;
+                                    bordaY = logoAltura / 8;
+                                }
+
+                                if (novaLargura != 0 || novaAltura != 0)
+                                {
+                                    using (Image image = loadedImage)
+                                    using (Image watermarkImage = redimencionarImagem.ResizeImage(pbImagem2.Image, novaLargura, novaAltura))
+                                    using (Graphics imageGraphics = Graphics.FromImage(image))
+                                    using (TextureBrush watermarkBrush = new TextureBrush(watermarkImage))
+                                    {
+                                        int x = (image.Width - bordaX - watermarkImage.Width);
+                                        int y = (image.Height - bordaY - watermarkImage.Height);
+                                        watermarkBrush.TranslateTransform(x, y);
+                                        imageGraphics.FillRectangle(watermarkBrush, new Rectangle(new Point(x, y), new Size(watermarkImage.Width + 1, watermarkImage.Height)));
+                                        image.Save($@"{txPastaSaida.Text}\Imagem{contadorDeImagem}.jpg");
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Dimensão da imagem não compativel");
+                                }
+                                contadorDeImagem++;
                             }
                         }
                         else
-                        {
-                            MessageBox.Show("Dimensão da imagem não compativel");
-                        }
-                        contadorDeImagem++;
+                            MessageBox.Show("Adicione uma logo marca");
                     }
+                    else
+                        MessageBox.Show("Adicione imagens a lista");
                 }
                 else
                     MessageBox.Show("Selecione uma pasta de saída");
